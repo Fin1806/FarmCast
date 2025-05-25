@@ -1,74 +1,87 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FarmCast Calendar</title>
-  <link rel="stylesheet" href="../CSS/calender.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmCast</title>
+    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../CSS/calender.css">
 </head>
+
 <body>
-  <div class="topbar">
-    <div class="logo">FarmCast</div>
-    <nav>
-      <a href="#">CLIENTS</a>
-      <a href="#">SERVICES</a>
-      <a href="#">ABOUT</a>
-      <a href="#">REGISTER</a>
-    </nav>
-  </div>
 
-  <div class="container">
-    <div class="sidebar">
-      <div class="profile-circle">A</div>
-      <h3>Asep</h3>
-      <ul>
-        <li><a href="#">Overview</a></li>
-        <li><a href="#">Calendar</a></li>
-        <li><a href="#">Statistics</a></li>
-        <li><a href="#">Agricultural</a></li>
-        <li><a href="#">Sales</a></li>
-      </ul>
-    </div>
-
-    <div class="main-content">
-      <h2>Calendar</h2>
-      <div class="tabs">
-        <button>Daily</button>
-        <button>Weekly</button>
-        <button>Monthly</button>
-      </div>
-
-      <div class="calendar">
-        <div class="calendar-header">September 2021</div>
-        <div class="calendar-grid">
-          <div class="header-cell">EST<br>GMT+8</div>
-          <div class="header-cell">SUN<br>21</div>
-          <div class="header-cell">MON<br>21</div>
-          <div class="header-cell">TUE<br>21</div>
-          <div class="header-cell">WED<br>21</div>
-          <div class="header-cell">THU<br>21</div>
-          <div class="header-cell">FRI<br>21</div>
-          <div class="header-cell">SAT<br>21</div>
-
-          <!-- Row 1 -->
-          <div class="time-cell">7 AM</div>
-          <div class="cell green"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
-          <!-- Row 2 -->
-          <div class="time-cell">8 AM</div>
-          <div class="cell green"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
-          <!-- Row 3 -->
-          <div class="time-cell">9 AM</div>
-          <div class="cell green"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
-          <!-- Row 4 -->
-          <div class="time-cell">10 AM</div>
-          <div class="cell green"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
-          <!-- Row 5 -->
-          <div class="time-cell">11 AM</div>
-          <div class="cell green"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+    <!-- Header dan Navbar -->
+    <div class="header">
+        <a href="/HTML/home.html" class="header-logo">
+            <img src="../Assets/main-logo.svg" alt="">
+            <h2>FarmCast</h2>
+        </a>
+        <div class="navbar">
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links">
+                <a href="/HTML/market.html">MARKET</a>
+                <a href="/HTML/services.html">SERVICES</a>
+                <a href="/HTML/register.html">REGISTER</a>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  <script href="../JS/calender.js"></script>
+<!-- isi -->
+    <section id="admin">
+        <div class="sidebar">
+            <div class="profile-img">
+                <div class="img-content-prf"></div>
+            </div>
+            <h4 class="text-name">Asep</h4>
+            <ul class="menu-list">
+                <li><a href="">Overview</a></li>
+                <li class="m-active"><a href="">Calendar</a></li>
+                <li><a href="/HTML/statistic.html">Statistics</a></li>
+                <li><a href="">Agricultural</a></li>
+                <li><a href="">Sales</a></li>
+            </ul>
+        </div>
+        <div class="content">
+          <div class="calendar-section">
+            <div class="calendar-header">
+              <h3>Calendar</h3>
+              <div class="calendar-tabs">
+                <button class="tab-btn active">Daily</button>
+                <button class="tab-btn">Weekly</button>
+                <button class="tab-btn">Monthly</button>
+              </div>
+            </div>
+        
+            <div class="calendar-grid" id="calendarGrid"></div>
+        
+            <div class="notes-section">
+              <div class="note-card">
+                <h4>🌾 Reminder: Watering</h4>
+                <p>Water the paddy field at 7 AM on Sunday.</p>
+              </div>
+              <div class="note-card">
+                <h4>🌱 Reminder: Soil Check</h4>
+                <p>Check soil moisture for corn at 10 AM on Wednesday.</p>
+              </div>
+              <div class="note-card">
+                <h4>🧺 Reminder: Harvest</h4>
+                <p>Prepare for tomato harvest on Friday at 11 AM.</p>
+              </div>
+            </div>
+          </div>
+        </div>  
+
+          <script src="../JS/statistic.js"></script>
+    </section>
+    
+
+<script src="../JS/calender.js"></script>
 </body>
+<script src="../JS/global.js"></script>
+
+
+
 </html>
