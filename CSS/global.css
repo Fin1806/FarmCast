@@ -37,6 +37,8 @@ body {
     align-items: center;
     gap: 12px;
     font-weight: 800;
+    text-decoration: none;
+    color: black;
 }
 
 .header-logo h2 {
