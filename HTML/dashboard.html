@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FarmCast Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Top Navbar -->
+  <header class="bg-white shadow px-6 py-4 flex justify-between items-center">
+    <div class="text-2xl font-bold text-green-700">FarmCast</div>
+    <nav class="space-x-6 text-gray-700">
+      <a href="#">CLIENTS</a>
+      <a href="#">SERVICES</a>
+      <a href="#">ABOUT</a>
+      <a href="#" class="text-red-500 font-semibold">LOGOUT</a>
+    </nav>
+  </header>
+
+  <div class="flex">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white h-screen shadow-lg flex flex-col p-6">
+      <div class="flex flex-col items-center">
+        <div class="w-24 h-24 rounded-full bg-gradient-to-tr from-green-400 to-yellow-300 mb-2"></div>
+        <h2 class="font-semibold mt-2">Asep</h2>
+      </div>
+      <nav class="mt-6 space-y-3">
+        <a href="#" class="text-green-700 font-medium">• Overview</a>
+        <a href="#" class="text-gray-700">Calendar</a>
+        <a href="#" class="text-gray-700">Statistics</a>
+        <a href="#" class="text-gray-700">Agricultural</a>
+        <a href="#" class="text-gray-700">Sales</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6 space-y-6">
+      <!-- Weather Section -->
+      <section class="bg-white rounded-xl shadow p-6">
+        <h3 class="text-xl font-bold mb-4">Weather</h3>
+        <!-- You can insert weather cards here -->
+        <div class="flex justify-between items-center">
+          <div>
+            <p class="text-lg font-semibold">Kudus City</p>
+            <p class="text-4xl font-bold text-green-700">24°</p>
+            <p class="text-sm text-gray-600">Thunder Storm</p>
+          </div>
+          <div>
+            <img src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png" class="w-24 h-24" alt="storm"/>
+          </div>
+        </div>
+      </section>
+
+     <!-- Overview Section -->
+<section>
+    <h3 class="text-xl font-bold mb-4">Overview</h3>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <!-- Map + Search -->
+      <div class="col-span-2 bg-white rounded-xl shadow p-4">
+        <div class="mb-4 flex justify-between">
+          <input type="text" placeholder="Search..." class="border p-2 w-full rounded"/>
+          <button class="ml-2 bg-green-600 text-white px-4 py-2 rounded">New Job</button>
+        </div>
+        <img src="https://via.placeholder.com/600x300" class="rounded-lg w-full" alt="map preview"/>
+      </div>
+  
+      <!-- Due Jobs Card -->
+      <div class="bg-white rounded-xl shadow p-4">
+        <h4 class="text-md font-semibold mb-3">Due Jobs</h4>
+  
+        <!-- Job 1 -->
+        <div class="border-l-4 border-orange-500 pl-3 mb-4">
+          <p class="font-semibold">Harvest A13</p>
+          <p class="text-sm text-gray-600">Harvesting Session – 12/03/2025</p>
+        </div>
+  
+        <!-- Job 2 -->
+        <div class="border-l-4 border-orange-500 pl-3 mb-4">
+          <p class="font-semibold">Harvest A02</p>
+          <p class="text-sm text-gray-600">Charlotte – 11/03/2025</p>
+        </div>
+  
+        <!-- Job 3 -->
+        <div class="border-l-4 border-orange-500 pl-3 mb-4">
+          <p class="font-semibold">Harvest A13</p>
+          <p class="text-sm text-gray-600">Charlotte – 09/03/2025</p>
+        </div>
+  
+        <!-- View All link -->
+        <a href="#" class="text-green-600 text-sm font-medium hover:underline">View All</a>
+      </div>
+    </div>
+  </section>
+  
+
+      <!-- Summary Section -->
+      <section class="grid grid-cols-3 gap-4">
+        <div class="bg-white p-4 rounded shadow text-center">
+          <p class="text-sm text-gray-500">Jobs Completed</p>
+          <p class="text-2xl font-bold text-green-600">12</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow text-center">
+          <p class="text-sm text-gray-500">Jobs Due</p>
+          <p class="text-2xl font-bold text-yellow-600">34</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow text-center">
+          <p class="text-sm text-gray-500">Jobs Active</p>
+          <p class="text-2xl font-bold text-red-600">39</p>
+        </div>
+      </section>
+
+      <!-- Soil Condition Table -->
+      <section class="bg-white rounded-xl shadow p-6">
+        <h3 class="text-xl font-bold mb-4">Soil Condition</h3>
+        <table class="w-full text-left table-auto">
+          <thead class="bg-gray-100">
+            <tr>
+              <th class="p-2">Parameter</th>
+              <th class="p-2">Value</th>
+              <th class="p-2">Recommendation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="p-2">Moisture</td>
+              <td class="p-2">38%</td>
+              <td class="p-2 text-red-600">Soil is dry. Irrigation recommended within 24h.</td>
+            </tr>
+            <tr>
+              <td class="p-2">Temperature</td>
+              <td class="p-2">27°C</td>
+              <td class="p-2 text-green-600">Ideal temperature. Monitor for heat spikes.</td>
+            </tr>
+            <tr>
+              <td class="p-2">Acidity</td>
+              <td class="p-2">6.5</td>
+              <td class="p-2">Neutral and optimal for most crops.</td>
+            </tr>
+            <tr>
+              <td class="p-2">Fertility Index</td>
+              <td class="p-2">78%</td>
+              <td class="p-2 text-green-600">Good. Apply compost after harvest to sustain quality.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
