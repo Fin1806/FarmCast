@@ -1,11 +1,13 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FarmCast</title>
+    <title>FarmCast - Fresh Produce, Direct from Farmers</title>
+    <link rel="stylesheet" href="../CSS/market.css">
     <link rel="stylesheet" href="../CSS/global.css">
-    <link rel="stylesheet" href="../CSS/home.css">
+
 </head>
 
 <body>
@@ -18,235 +20,304 @@
         </a>
         <div class="navbar">
 
-            <a href="/HTML/market.html">MARKET</a>
+            <a class="nb-active" href="/HTML/market.html">MARKET</a>
             <a href="">SERVICES</a>
             <a href="">REGISTER</a>
         </div>
     </div>
 
-    <!-- Hero Section Yagesya -->
-    <section id="hero">
-        <div class="card-hero">
-            <div class="ch-texts">
-                <h1>Boost Your <br>Farming Productivity </h1>
-                <p>Leveraging technology to help grow more, and work smarter</p>
+    <!-- Hero Section -->
+    <div class="slider-container">
+        <div class="slider-wrapper" id="sliderWrapper">
+            <!-- Slide 1 -->
+            <div class="slide slide-1">
+                <div class="slide-content">
+                    <h2>Fresh Produce,<br>Direct from Farmers</h2>
+                    <p>Get 10% Off Your First Order - Support Local But Fresh</p>
+                </div>
+                <div class="slide-images">
+                    <img src="../Assets/Slider1.png" alt="Fresh Vegetables" class="produce-image">
+                </div>
             </div>
-            <a class="button-primary" href="">GET STARTED</a>
-            <img src="../Assets/hero-laptop.svg" alt="">
-        </div>
-    </section>
 
-    <!-- Partners -->
-    <div class="partners">
-        <p>OUR PARTNERS</p>
-        <div class="partners-logo">
-            <img src="../Assets/partners_logo/UI/image 3.svg" alt="">
-            <img src="../Assets/partners_logo/UI/image 5.svg" alt="">
-            <img src="../Assets/partners_logo/UI/image 4.svg" alt="">
+            <!-- Slide 2 -->
+            <div class="slide slide-2">
+                <div class="slide-content">
+                    <h2>100% Fresh & Authentic</h2>
+                    <p>Straight from Local Farmers, No Middleman, Ready to Eat</p>
+                </div>
+                <div class="slide-images">
+                    <img src="../Assets/Slider2.png" alt="Fresh Fruit Basket" class="produce-image">
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation dots -->
+        <div class="navigation">
+            <div class="nav-dot active" onclick="goToSlide(0)"></div>
+            <div class="nav-dot" onclick="goToSlide(1)"></div>
         </div>
     </div>
+    <script src="../JS/market.js"></script>
 
-    <!-- Essential Feature Section -->
-    <section id="essentials">
-        <div class="card-ef">
-            <div class="cef-left cefs">
-                <h1>Improvise Your Agricultural
-                    Environment</h1>
-                <p>Adapt to every season, every field, and every challenge with data-backed flexibility. FarmCast helps
-                    you fine-tune your agricultural decisions on the fly—from adjusting <br> irrigation during droughts
-                    to
-                    shifting crop strategies based on market trends. With smart insights, real-time monitoring, and
-                    predictive tools, you’re empowered to move fast.</p>
-                <div class="col-cards-features">
-                    <div class="item-features">
-                        <img src="../Assets/icons/UI/Partly Cloudy Day.svg" alt="">
-                        <h6>Dynamic Weather Forecasting</h6>
-                    </div>
-                    <div class="item-features">
-                        <img src="../Assets/icons/UI/Total Sales.svg" alt="">
-                        <h6>Real-Time Market & Cost Insights</h6>
-                    </div>
-                    <div class="item-features">
-                        <img src="../Assets/icons/UI/Report Card.svg" alt="">
-                        <h6>Crop Performance Analytics</h6>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="cef-right cefs">
-                <img src="../Assets/illustration-essentials.svg" alt="">
-                <div class="divider-anjay"></div>
-                <p>Adapt to every season, every field, and every challenge with data-backed flexibility. FarmCast helps
-                    you fine-tune your agricultural decisions on the fly—from adjusting irrigation during droughts to
-                    shifting crop strategies based</p>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- index.html -->
-    <section class="stats-grid">
-
-        <div class="cell">
-            <h2><span class="number">500+</span> Crops Sold Every Month</h2>
-            <p>FarmCast provides farmers with a seamless marketplace to sell their products directly to buyers every
-                month.</p>
-        </div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell">
-            <h2>Reducing Crop<br>Losses with Precision</h2>
-            <p>FarmCast uses AI-driven alerts and sensor data to minimize losses and maximize your harvest yield.</p>
-        </div>
-    </section>
-
-    <!-- TESTIMONIALS SECTION -->
-    <section class="testimonials">
+    <!-- Categories -->
+    <section class="categories">
         <div class="container">
+            <div class="category-grid">
+                <div class="category-item">
+                    <div class="category-icon" style="background: #e8f5e8;">🥬</div>
+                    <span class="category-name">Leafy Greens</span>
+                </div>
+                <div class="category-item">
+                    <div class="category-icon" style="background: #ffe8e8;">🍅</div>
+                    <span class="category-name">Tomatoes & Peppers</span>
+                </div>
+                <div class="category-item">
+                    <div class="category-icon" style="background: #fff3e0;">🥕</div>
+                    <span class="category-name">Root Vegetables</span>
+                </div>
+                <div class="category-item">
+                    <div class="category-icon" style="background: #f3e5f5;">🧄</div>
+                    <span class="category-name">Onions & Garlic</span>
+                </div>
+                <div class="category-item">
+                    <div class="category-icon" style="background: #e8f5e8;">🥒</div>
+                    <span class="category-name">Melons & Squash</span>
+                </div>
+                <div class="category-item">
+                    <div class="category-icon" style="background: #fff8e1;">🍊</div>
+                    <span class="category-name">Tropical Fruits</span>
+                </div>
+                <div class="category-item">
+                    <div class="category-icon" style="background: #f5f5f5;">⊞</div>
+                    <span class="category-name">All Category</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <!-- header with lines -->
+    <!-- Product Sections -->
+    <section class="products">
+        <div class="container">
+            <!-- Trending Section -->
             <div class="section-header">
-                <hr>
-                <h2>What our Clients Say</h2>
-                <hr>
+                <h2 class="section-title">Trending</h2>
+                <a href="#" class="see-all">See All ></a>
+            </div>
+            <div class="product-grid">
+                <a href="./product-card.html" class="product-card">
+                    <img src="../Assets/Carrot-Product.png" alt="Organic Carrot-Products" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Organic Carrot-Products - 1kg Pack - Farm Fresh Vegetables</h3>
+                        <p class="product-price">Rp. 30.000</p>
+                        <p class="product-location">Kudus City</p>
+                        <p class="product-rating">⭐ 4.9 (500 sold)</p>
+                    </div>
+                </a>
+                <a href="./product-card.html" class="product-card">
+                    <img src="../Assets/Carrot-Product.png" alt="Organic Carrot-Products" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Organic Carrot-Products - 1kg Pack - Farm Fresh Vegetables</h3>
+                        <p class="product-price">Rp. 30.000</p>
+                        <p class="product-location">Kudus City</p>
+                        <p class="product-rating">⭐ 4.9 (500 sold)</p>
+                    </div>
+                </a>
+                <a href="./product-card.html" class="product-card">
+                    <img src="../Assets/Carrot-Product.png" alt="Organic Carrot-Products" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Organic Carrot-Products - 1kg Pack - Farm Fresh Vegetables</h3>
+                        <p class="product-price">Rp. 30.000</p>
+                        <p class="product-location">Kudus City</p>
+                        <p class="product-rating">⭐ 4.9 (500 sold)</p>
+                    </div>
+                </a>
+                <a href="./product-card.html" class="product-card">
+                    <img src="../Assets/Carrot-Product.png" alt="Organic Carrot-Products" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Organic Carrot-Products - 1kg Pack - Farm Fresh Vegetables</h3>
+                        <p class="product-price">Rp. 30.000</p>
+                        <p class="product-location">Kudus City</p>
+                        <p class="product-rating">⭐ 4.9 (500 sold)</p>
+                    </div>
+                </a>
             </div>
 
-            <p class="section-subtitle">
-                Discover how FarmCast is transforming farms across the country—straight from the voices of farmers and
-                agribusiness owners who've seen real results in yield, efficiency, and peace of mind.
-            </p>
-
-            <!-- grid of cards -->
-            <div class="testimonials-grid">
-                <!-- Card 1 -->
-                <div class="card">
-                    <div class="quote-icon">“</div>
-                    <p class="quote">
-                        Before, I often struggled when the weather changed suddenly, but with FarmCast, I can monitor
-                        the weather in real-time. This app has really helped me plan the perfect planting time. My crop
-                        yield increased by 20% this year, and I feel much more confident in every farming decision.
-                    </p>
-                    <div class="card-footer">
-                        <div class="user">
-                            <img src="../Assets/testimonials/UI/Ellipse 53.png" alt="Chris Holland">
-                            <div class="user-info">
-                                <div class="name">Chris Holland</div>
-                                <div class="role">Tomato Farmer, Houston</div>
-                            </div>
-                        </div>
-                        <div class="rating">★ 4.9</div>
+            <!-- Recent Search Section -->
+            <div class="section-header">
+                <h2 class="section-title">Based On Your Recent Search</h2>
+                <a href="#" class="see-all">See All ></a>
+            </div>
+            <div class="product-grid">
+                <a href="./product-card.html" class="product-card">
+                    <img src="../Assets/Carrot-Product.png" alt="Organic Carrot-Products" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Organic Carrot-Products - 1kg Pack - Farm Fresh Vegetables</h3>
+                        <p class="product-price">Rp. 30.000</p>
+                        <p class="product-location">Kudus City</p>
+                        <p class="product-rating">⭐ 4.9 (500 sold)</p>
                     </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="card">
-                    <div class="quote-icon">“</div>
-                    <p class="quote">
-                        I used to experience losses due to unexpected bad weather, but now, with FarmCast, I know
-                        exactly when rain or strong winds are coming, so I can take precautions. My losses have
-                        decreased by 30% thanks to the accurate weather predictions!
-                    </p>
-                    <div class="card-footer">
-                        <div class="user">
-                            <img src="../Assets/testimonials/UI/Ellipse 53.png" alt="Michael Salor">
-                            <div class="user-info">
-                                <div class="name">Michael Salor</div>
-                                <div class="role">Rice Farmer, Jember</div>
-                            </div>
-                        </div>
-                        <div class="rating">★ 4.9</div>
+                </a>
+                <a href="./product-card.html" class="product-card">
+                    <img src="../Assets/Carrot-Product.png" alt="Organic Carrot-Products" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Organic Carrot-Products - 1kg Pack - Farm Fresh Vegetables</h3>
+                        <p class="product-price">Rp. 30.000</p>
+                        <p class="product-location">Kudus City</p>
+                        <p class="product-rating">⭐ 4.9 (500 sold)</p>
                     </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="card">
-                    <div class="quote-icon">“</div>
-                    <p class="quote">
-                        With FarmCast, I can easily know the market conditions and the weather. I can sell my produce at
-                        better prices because I have up-to-date market information. This app has truly changed the way I
-                        farm!
-                    </p>
-                    <div class="card-footer">
-                        <div class="user">
-                            <img src="../Assets/testimonials/UI/Ellipse 53.png" alt="Arif Mulyono">
-                            <div class="user-info">
-                                <div class="name">Arif Mulyono</div>
-                                <div class="role">Agricultural Partner, Sumedang</div>
-                            </div>
-                        </div>
-                        <div class="rating">★ 4.9</div>
+                </a>
+                <a href="./product-card.html" class="product-card">
+                    <img src="../Assets/Carrot-Product.png" alt="Organic Carrot-Products" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Organic Carrot-Products - 1kg Pack - Farm Fresh Vegetables</h3>
+                        <p class="product-price">Rp. 30.000</p>
+                        <p class="product-location">Kudus City</p>
+                        <p class="product-rating">⭐ 4.9 (500 sold)</p>
                     </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="card">
-                    <div class="quote-icon">“</div>
-                    <p class="quote">
-                        I’ve been buying fresh produce directly from farmers through FarmCast, and it has been a
-                        game-changer. The quality of the crops is exceptional, and I love knowing I’m supporting local
-                        farmers. Delivery is always on time, and produce stays fresh much longer than what I find in
-                        stores.
-                    </p>
-                    <div class="card-footer">
-                        <div class="user">
-                            <img src="../Assets/testimonials/UI/Ellipse 49.png" alt="Sarah Lee">
-                            <div class="user-info">
-                                <div class="name">Sarah Lee</div>
-                                <div class="role">Organic Produce Buyer, Jakarta</div>
-                            </div>
-                        </div>
-                        <div class="rating">★ 4.9</div>
+                </a>
+                <a href="./product-card.html" class="product-card">
+                    <img src="../Assets/Carrot-Product.png" alt="Organic Carrot-Products" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Organic Carrot-Products - 1kg Pack - Farm Fresh Vegetables</h3>
+                        <p class="product-price">Rp. 30.000</p>
+                        <p class="product-location">Kudus City</p>
+                        <p class="product-rating">⭐ 4.9 (500 sold)</p>
                     </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="card">
-                    <div class="quote-icon">“</div>
-                    <p class="quote">
-                        FarmCast has made it so easy to purchase high-quality crops from local farmers. The selection is
-                        fantastic, and I always get fresh, healthy products for my restaurant. I know exactly where my
-                        produce is coming from, and the app makes the whole process incredibly convenient.
-                    </p>
-                    <div class="card-footer">
-                        <div class="user">
-                            <img src="../Assets/testimonials/UI/Ellipse 50.png" alt="David Roberts">
-                            <div class="user-info">
-                                <div class="name">David Roberts</div>
-                                <div class="role">Restaurant Owner, Surabaya</div>
-                            </div>
-                        </div>
-                        <div class="rating">★ 4.9</div>
-                    </div>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="card">
-                    <div class="quote-icon">“</div>
-                    <p class="quote">
-                        Before, I often struggled when the weather changed suddenly, but with FarmCast, I can monitor
-                        the weather in real-time. This has really helped me plan the perfect planting time. My yield
-                        increased by 20%, and I feel much more confident in every decision.
-                    </p>
-                    <div class="card-footer">
-                        <div class="user">
-                            <img src="../Assets/testimonials/UI/Ellipse 51.png" alt="Maria Gonzalez">
-                            <div class="user-info">
-                                <div class="name">Maria Gonzalez</div>
-                                <div class="role">Wholesale Buyer, Yogyakarta</div>
-                            </div>
-                        </div>
-                        <div class="rating">★ 4.9</div>
-                    </div>
-                </div>
+                </a>
             </div>
 
+            <!-- Recommendation Section -->
+            <div class="section-header">
+                <h2 class="section-title">Recommendation</h2>
+                <a href="#" class="see-all">See All ></a>
+            </div>
+
+            <!-- First row of recommendations -->
+            <div class="product-grid">
+                <a href="./product-card.html" class="product-card">
+                    <img src="../Assets/Carrot-Product.png" alt="Organic Carrot-Products" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Organic Carrot-Products - 1kg Pack - Farm Fresh Vegetables</h3>
+                        <p class="product-price">Rp. 30.000</p>
+                        <p class="product-location">Kudus City</p>
+                        <p class="product-rating">⭐ 4.9 (500 sold)</p>
+                    </div>
+                </a>
+                <a href="./product-card.html" class="product-card">
+                    <img src="../Assets/Carrot-Product.png" alt="Organic Carrot-Products" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Organic Carrot-Products - 1kg Pack - Farm Fresh Vegetables</h3>
+                        <p class="product-price">Rp. 30.000</p>
+                        <p class="product-location">Kudus City</p>
+                        <p class="product-rating">⭐ 4.9 (500 sold)</p>
+                    </div>
+                </a>
+                <a href="./product-card.html" class="product-card">
+                    <img src="../Assets/Carrot-Product.png" alt="Organic Carrot-Products" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Organic Carrot-Products - 1kg Pack - Farm Fresh Vegetables</h3>
+                        <p class="product-price">Rp. 30.000</p>
+                        <p class="product-location">Kudus City</p>
+                        <p class="product-rating">⭐ 4.9 (500 sold)</p>
+                    </div>
+                </a>
+                <a href="./product-card.html" class="product-card">
+                    <img src="../Assets/Carrot-Product.png" alt="Organic Carrot-Products" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Organic Carrot-Products - 1kg Pack - Farm Fresh Vegetables</h3>
+                        <p class="product-price">Rp. 30.000</p>
+                        <p class="product-location">Kudus City</p>
+                        <p class="product-rating">⭐ 4.9 (500 sold)</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Second row of recommendations -->
+            <div class="product-grid">
+                <a href="./product-card.html" class="product-card">
+                    <img src="../Assets/Carrot-Product.png" alt="Organic Carrot-Products" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Organic Carrot-Products - 1kg Pack - Farm Fresh Vegetables</h3>
+                        <p class="product-price">Rp. 30.000</p>
+                        <p class="product-location">Kudus City</p>
+                        <p class="product-rating">⭐ 4.9 (500 sold)</p>
+                    </div>
+                </a>
+                <a href="./product-card.html" class="product-card">
+                    <img src="../Assets/Carrot-Product.png" alt="Organic Carrot-Products" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Organic Carrot-Products - 1kg Pack - Farm Fresh Vegetables</h3>
+                        <p class="product-price">Rp. 30.000</p>
+                        <p class="product-location">Kudus City</p>
+                        <p class="product-rating">⭐ 4.9 (500 sold)</p>
+                    </div>
+                </a>
+                <a href="./product-card.html" class="product-card">
+                    <img src="../Assets/Carrot-Product.png" alt="Organic Carrot-Products" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Organic Carrot-Products - 1kg Pack - Farm Fresh Vegetables</h3>
+                        <p class="product-price">Rp. 30.000</p>
+                        <p class="product-location">Kudus City</p>
+                        <p class="product-rating">⭐ 4.9 (500 sold)</p>
+                    </div>
+                </a>
+                <a href="./product-card.html" class="product-card">
+                    <img src="../Assets/Carrot-Product.png" alt="Organic Carrot-Products" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Organic Carrot-Products - 1kg Pack - Farm Fresh Vegetables</h3>
+                        <p class="product-price">Rp. 30.000</p>
+                        <p class="product-location">Kudus City</p>
+                        <p class="product-rating">⭐ 4.9 (500 sold)</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Third row of recommendations -->
+            <div class="product-grid">
+                <a href="./product-card.html" class="product-card">
+                    <img src="../Assets/Carrot-Product.png" alt="Organic Carrot-Products" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Organic Carrot-Products - 1kg Pack - Farm Fresh Vegetables</h3>
+                        <p class="product-price">Rp. 30.000</p>
+                        <p class="product-location">Kudus City</p>
+                        <p class="product-rating">⭐ 4.9 (500 sold)</p>
+                    </div>
+                </a>
+                <a href="./product-card.html" class="product-card">
+                    <img src="../Assets/Carrot-Product.png" alt="Organic Carrot-Products" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Organic Carrot-Products - 1kg Pack - Farm Fresh Vegetables</h3>
+                        <p class="product-price">Rp. 30.000</p>
+                        <p class="product-location">Kudus City</p>
+                        <p class="product-rating">⭐ 4.9 (500 sold)</p>
+                    </div>
+                </a>
+                <a href="./product-card.html" class="product-card">
+                    <img src="../Assets/Carrot-Product.png" alt="Organic Carrot-Products" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Organic Carrot-Products - 1kg Pack - Farm Fresh Vegetables</h3>
+                        <p class="product-price">Rp. 30.000</p>
+                        <p class="product-location">Kudus City</p>
+                        <p class="product-rating">⭐ 4.9 (500 sold)</p>
+                    </div>
+                </a>
+                <a href="./product-card.html" class="product-card">
+                    <img src="../Assets/Carrot-Product.png" alt="Organic Carrot-Products" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Organic Carrot-Products - 1kg Pack - Farm Fresh Vegetables</h3>
+                        <p class="product-price">Rp. 30.000</p>
+                        <p class="product-location">Kudus City</p>
+                        <p class="product-rating">⭐ 4.9 (500 sold)</p>
+                    </div>
+                </a>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <hr>
+
         <div class="content-fr-1">
 
             <div class="cfr1-item">
