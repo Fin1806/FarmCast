@@ -22,13 +22,6 @@
     margin-top: 250px;
 }
 
-@media (width <=770px) {
-    .slider-container {
-        margin-top: 12px;
-
-    }
-}
-
 /* Slider wrapper */
 .slider-wrapper {
     display: flex;
