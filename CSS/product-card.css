@@ -1,24 +1,36 @@
-.navbar {
+.header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    padding: 42px;
     align-items: center;
-    padding: 20px 40px;
-    background: white;
-    border-bottom: 1px solid #eee;
-    margin-bottom: 40px;
 }
 
-.product-card {
+.top-logo {
     display: flex;
-    background: white;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    gap: 40px;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    font-weight: 800;
 }
 
+.top-logo h2 {
+    font-weight: 800;
+}
+
+.top-logo img {
+    width: auto;
+    height: 32px;
+}
+
+.search{
+    display: flex;
+    flex-direction: row;
+    gap: 10vh;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 .search-container {
     flex: 1;
     max-width: 800px;
@@ -52,11 +64,7 @@
     height: 24px;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-}
+
 
 .product-card {
     display: flex;
@@ -103,25 +111,6 @@ body {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 20px;
-}
-
-.stars {
-    color: #ffd700;
-}
-
-.star.half {
-    position: relative;
-    display: inline-block;
-}
-
-.star.half:after {
-    content: '★';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 50%;
-    overflow: hidden;
-    color: #ffd700;
 }
 
 .product-price {
@@ -234,6 +223,7 @@ body {
     padding: 24px;
     margin: 20px auto;
     max-width: 1200px;
+    border: 1px solid #cccccc;
 }
 
 .profile-container {
@@ -271,12 +261,14 @@ body {
 }
 
 .chat-now {
-    background: #4CAF50;
+    background: #206846;
     color: white;
     border: none;
+    font-size: 12px;
     padding: 8px 16px;
-    border-radius: 4px;
+    border-radius: 30px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .farmer-stats {
@@ -320,11 +312,12 @@ body {
     margin: 20px auto;
     padding: 24px;
     border-radius: 12px;
+    border: 1px solid #cccccc;
 }
 
 .product-description h3 {
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 700;
     margin: 0 0 12px 0;
 }
 
@@ -336,8 +329,8 @@ body {
 }
 
 .reviews-container {
-    width: 100%;
-    max-width: 1200px;
+
+    max-width: 1250px;
     margin: 20px auto;
     padding: 0 24px;
 }
@@ -424,13 +417,13 @@ body {
     min-width: 500px;
   }
   
-  .top-reviews .header {
+  .top-reviews .top {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   
-  .top-reviews .header a {
+  .top-reviews .top a {
     font-size: 14px;
     color: #333;
     text-decoration: none;
@@ -478,15 +471,39 @@ body {
     margin: 5px 0 10px 0;
   }
   
-  .actions button {
-    padding: 5px 10px;
-    border: 1px solid #ccc;
-    background: #fff;
-    margin-right: 10px;
+.feedback{
+    display: flex;
+    gap: 10px;
+}
+
+  .helpful{
+    background-color: transparent;
+    width: 200px;
+    border: 1px solid #8fd6bd; 
+    padding: 8px 16px;
+    border-radius: 20px;
     cursor: pointer;
-    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 10px;
   }
   
-  .actions button:hover {
-    background-color: #f3f3f3;
+  .helpful:hover {
+    background-color: #e0f2f0;
+  }
+  
+  .separator {
+    border-left: 1px solid #ccc; 
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .report-btn{
+    color: #000000;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .report-btn:hover {
+    text-decoration: underline;
   }

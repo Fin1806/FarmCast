@@ -1,0 +1,354 @@
+/* Custom styles for FarmCast Dashboard */
+
+/* Base styles and utilities */
+:root {
+    --primary-green: #15803d;
+    --light-green: #22c55e;
+    --dark-green: #166534;
+    --accent-orange: #f97316;
+    --accent-yellow: #eab308;
+    --gray-50: #f9fafb;
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-300: #d1d5db;
+    --gray-500: #6b7280;
+    --gray-700: #374151;
+    --gray-800: #1f2937;
+    --white: #ffffff;
+    --red-500: #ef4444;
+    --blue-500: #3b82f6;
+    --yellow-500: #eab308;
+  }
+  
+  /* Smooth transitions for interactive elements */
+  * {
+    transition: all 0.2s ease-in-out;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--gray-100);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--gray-300);
+    border-radius: 3px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--gray-500);
+  }
+  
+  /* Navigation hover effects */
+  .nav-link {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: var(--primary-green);
+    transition: left 0.3s ease;
+  }
+  
+  .nav-link:hover::before {
+    left: 0;
+  }
+  
+  /* Sidebar animations */
+  .sidebar-item {
+    position: relative;
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin: 2px 0;
+    cursor: pointer;
+  }
+  
+  .sidebar-item:hover {
+    background-color: var(--gray-50);
+    transform: translateX(4px);
+  }
+  
+  .sidebar-item.active {
+    background-color: #dcfce7;
+    color: var(--primary-green);
+    font-weight: 600;
+  }
+  
+  /* Card hover effects */
+  .card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Weather icon animations */
+  .weather-icon {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  /* Lightning animation for storm icon */
+  .lightning-pulse {
+    animation: lightning 2s ease-in-out infinite;
+  }
+  
+  @keyframes lightning {
+    0%, 90%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+  
+  /* Temperature display animation */
+  .temperature-display {
+    position: relative;
+  }
+  
+  .temperature-display::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+    transform: translateX(-100%);
+    animation: shimmer 3s infinite;
+  }
+  
+  @keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  
+  /* Sunrise/sunset arc animation */
+  .sun-arc {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .sun-path {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+      rgba(255, 193, 7, 0.3) 0%, 
+      rgba(255, 235, 59, 0.5) 50%, 
+      rgba(255, 152, 0, 0.3) 100%);
+    border-radius: 50% 50% 0 0;
+    animation: sun-movement 20s linear infinite;
+  }
+  
+  @keyframes sun-movement {
+    0% { transform: rotate(-90deg); }
+    100% { transform: rotate(90deg); }
+  }
+  
+  /* Map overlay animations */
+  .map-marker {
+    animation: pulse 2s infinite;
+    cursor: pointer;
+  }
+  
+  .map-marker:hover {
+    animation: none;
+    transform: scale(1.5);
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.2); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  /* Due jobs timeline */
+  .job-indicator {
+    position: relative;
+  }
+  
+  .job-indicator::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    width: 2px;
+    height: 10px;
+    background: var(--accent-orange);
+    transform: translateX(-50%);
+  }
+  
+  /* Stats counter animation */
+  .stat-number {
+    counter-reset: number 0;
+    animation: count-up 2s ease-out forwards;
+  }
+  
+  /* Table row hover effects */
+  .table-row {
+    transition: background-color 0.2s ease;
+  }
+  
+  .table-row:hover {
+    background-color: var(--gray-50);
+  }
+  
+  /* Loading states */
+  .loading {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .loading::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    animation: loading 1.5s infinite;
+  }
+  
+  @keyframes loading {
+    0% { left: -100%; }
+    100% { left: 100%; }
+  }
+  
+  /* Responsive utilities */
+  @media (max-width: 1024px) {
+    .sidebar {
+      position: fixed;
+      left: -256px;
+      z-index: 50;
+      transition: left 0.3s ease;
+    }
+    
+    .sidebar.open {
+      left: 0;
+    }
+    
+    .main-content {
+      margin-left: 0;
+    }
+    
+    .mobile-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 40;
+      display: none;
+    }
+    
+    .mobile-overlay.active {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .grid-responsive {
+      grid-template-columns: 1fr;
+    }
+    
+    .text-responsive {
+      font-size: 0.875rem;
+    }
+  }
+  
+  /* Button styles */
+  .btn-primary {
+    background: linear-gradient(135deg, var(--primary-green), var(--light-green));
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s ease;
+  }
+  
+  .btn-primary:hover::before {
+    left: 100%;
+  }
+  
+  .btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(21, 128, 61, 0.3);
+  }
+  
+  /* Input focus styles */
+  .form-input {
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 3px rgba(21, 128, 61, 0.1);
+  }
+  
+  /* Status indicators */
+  .status-indicator {
+    position: relative;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  
+  .status-active {
+    background: var(--light-green);
+    animation: pulse-green 2s infinite;
+  }
+  
+  .status-warning {
+    background: var(--accent-yellow);
+    animation: pulse-yellow 2s infinite;
+  }
+  
+  .status-danger {
+    background: var(--red-500);
+    animation: pulse-red 2s infinite;
+  }
+  
+  @keyframes pulse-green {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4); }
+    50% { box-shadow: 0 0 0 6px rgba(34, 197, 94, 0); }
+  }
+  
+  @keyframes pulse-yellow {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(234, 179, 8, 0.4); }
+    50% { box-shadow: 0 0 0 6px rgba(234, 179, 8, 0); }
+  }
+  
+  @keyframes pulse-red {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4); }
+    50% { box-shadow: 0 0 0 6px rgba(239, 68, 68, 0); }
+  }
