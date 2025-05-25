@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Card - Organic Carrots</title>
+    <link rel="stylesheet" href="../CSS/global.css">
     <link rel="stylesheet" href="../CSS/product-card.css">
     <link rel="stylesheet" href="../CSS/global.css">
 </head>
+
 <body>
-    <div class="header search ">
-        <div class="nb-wrapper">
-         <a href="/HTML/home.html" class="header-logo">
-             <img src="../Assets/main-logo.svg" alt="">
-             <h2>FarmCast</h2>
-         </a>
-         <div class="navbar">
-             <div class="nav-links">
-                 <a class="nb-active" href="/HTML/market.html">MARKET</a>
-                 <a href="/HTML/services.html">SERVICES</a>
-                 <a href="/HTML/register.html">REGISTER</a>
-             </div>
-             <div class="hamburger-menu">
-                 <span></span>
-                 <span></span>
-                 <span></span>
-             </div>
-         </div>
+    <div class="header">
+        <a href="/HTML/home.html" class="header-logo">
+            <img src="../Assets/main-logo.svg" alt="">
+            <h2>FarmCast</h2>
+        </a>
+        <div class="navbar">
+            <div class="nav-links">
+                <a href="/HTML/market.html">MARKET</a>
+                <a href="/HTML/services.html">SERVICES</a>
+                <a href="/HTML/register.html">REGISTER</a>
+            </div>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <input class="search-bar" type="text" name="" id="" placeholder="Search">
-     </div>
-     <div class="jarak"><h1></h1></div>
+    </div>
     <div class="product-card">
         <div class="product-image">
             <img src="../Assets/Carrot-Product.png" alt="Organic Carrots">
@@ -38,13 +37,7 @@
             <h2 class="product-title">Organic Carrots – 1kg Pack – Farm Fresh Vegetables</h2>
             <div class="product-rating">
                 <span class="rating">4.9</span>
-                <div class="stars">
-                    <span class="star">★</span>
-                    <span class="star">★</span>
-                    <span class="star">★</span>
-                    <span class="star">★</span>
-                    <span class="star half">★</span>
-                </div>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
                 <span class="reviews">23.4 Reviews</span>
                 <span class="sold">10K+ Sold</span>
             </div>
@@ -82,11 +75,11 @@
     <div class="farmer-profile">
         <div class="profile-container">
             <div class="farmer-info">
-                <img src="../Assets/Carrot-Icon.png" alt="Farmer Profile" class="farmer-avatar">
+                <img src="../Assets/cowboy.png" alt="Farmer Profile" class="farmer-avatar">
                 <div class="farmer-details">
                     <h3 class="farmer-name">Kudus Number 1 Farmer</h3>
                     <div class="online-status">Online 2 hours ago</div>
-                    <button class="chat-now">Chat Now</button>
+                    <a href="./chat.html" class="chat-now">Chat Now</a>
                 </div>
             </div>
             <div class="farmer-stats">
@@ -97,7 +90,7 @@
                     </div>
                     <div class="stat-item">
                         <span class="stat-label">Chat Response Rate:</span>
-                        <span class="stat-value">97%</span>
+                        <span class="stat-value"> 97%</span>
                     </div>
                     <div class="stat-item">
                         <span class="stat-label">Joined:</span>
@@ -111,7 +104,7 @@
                     </div>
                     <div class="stat-item">
                         <span class="stat-label">Chat Response Time:</span>
-                        <span class="stat-value">Within an hour</span>
+                        <span class="stat-value"> 1hour</span>
                     </div>
                     <div class="stat-item">
                         <span class="stat-label">Followers:</span>
@@ -123,73 +116,97 @@
     </div>
     <div class="product-description">
         <h3>Product Description</h3>
-        <p>Grown in the cool highlands of Kudus, these carrots are known for their sweet flavor, crisp texture, and vibrant orange color. Packed with essential nutrients like Vitamin A, beta-carotene, and fiber, they're perfect for cooking, juicing, or even snacking raw.</p>
+        <p>Grown in the cool highlands of Kudus, these carrots are known for their sweet flavor, crisp texture, and
+            vibrant orange color. Packed with essential nutrients like Vitamin A, beta-carotene, and fiber, they're
+            perfect for cooking, juicing, or even snacking raw.</p>
     </div>
-<div class="reviews-container">
-    <div class="container">
-        <div class="reviews-summary">
-          <h2>Customer Reviews</h2>
-          <div class="rating-score">
-            <span class="star">⭐</span>
-            <span class="score">4.9</span>
-            <span class="out-of">/ 5.0</span>
-          </div>
-          <p class="total-ratings">203 Global Ratings</p>
-          <div class="rating-bars">
-            <div class="bar-row"><span>5 ⭐</span><div class="bar"><div class="fill" style="width: 95%;"></div></div><span>(174)</span></div>
-            <div class="bar-row"><span>4 ⭐</span><div class="bar"><div class="fill" style="width: 12%;"></div></div><span>(22)</span></div>
-            <div class="bar-row"><span>3 ⭐</span><div class="bar"><div class="fill" style="width: 6%;"></div></div><span>(11)</span></div>
-            <div class="bar-row"><span>2 ⭐</span><div class="bar"><div class="fill" style="width: 1.5%;"></div></div><span>(3)</span></div>
-            <div class="bar-row"><span>1 ⭐</span><div class="bar"><div class="fill" style="width: 0%;"></div></div><span>(0)</span></div>
-          </div>
-          <button class="review-button">Write a customer review</button>
-        </div>
-    
-        <div class="top-reviews">
-          <div class="header">
-            <h2>Top Reviews</h2>
-            <a href="#">See All</a>
-          </div>
-    
-          <div class="review-card">
-            <div class="user-info">
-              <div class="avatar"></div>
-              <div class="username">ChrisTheCarrotLover</div>
+    <div class="reviews-container">
+        <div class="container">
+            <div class="reviews-summary">
+                <h2>Customer Reviews</h2>
+                <div class="rating-score">
+                    <span class="star">⭐</span>
+                    <span class="score">4.9</span>
+                    <span class="out-of">/ 5.0</span>
+                </div>
+                <p class="total-ratings">203 Global Ratings</p>
+                <div class="rating-bars">
+                    <div class="bar-row"><span>5 ⭐</span>
+                        <div class="bar">
+                            <div class="fill" style="width: 95%;"></div>
+                        </div><span>(174)</span>
+                    </div>
+                    <div class="bar-row"><span>4 ⭐</span>
+                        <div class="bar">
+                            <div class="fill" style="width: 12%;"></div>
+                        </div><span>(22)</span>
+                    </div>
+                    <div class="bar-row"><span>3 ⭐</span>
+                        <div class="bar">
+                            <div class="fill" style="width: 6%;"></div>
+                        </div><span>(11)</span>
+                    </div>
+                    <div class="bar-row"><span>2 ⭐</span>
+                        <div class="bar">
+                            <div class="fill" style="width: 1.5%;"></div>
+                        </div><span>(3)</span>
+                    </div>
+                    <div class="bar-row"><span>1 ⭐</span>
+                        <div class="bar">
+                            <div class="fill" style="width: 0%;"></div>
+                        </div><span>(0)</span>
+                    </div>
+                </div>
+                <button class="review-button">Write a customer review</button>
             </div>
-            <div class="review-body">
-              <div class="stars">⭐⭐⭐⭐⭐</div>
-              <div class="product">Carrot 1kg</div>
-              <div class="date">Reviewed in the United States on May 20, 2025</div>
-              <p>Absolutely fresh and sweet! These carrots were crisp and perfect for my salads and soups. Will definitely order again.</p>
-              <div class="actions">
-                <button>Helpful</button>
-                <button>Report</button>
-              </div>
-            </div>
-          </div>
-    
-          <div class="review-card">
-            <div class="user-info">
-              <div class="avatar"></div>
-              <div class="username">ChrisTheCarrotLover</div>
-            </div>
-            <div class="review-body">
-              <div class="stars">★★★★★</div>
-              <div class="product">Carrot 1kg</div>
-              <div class="date">Reviewed in the United States on May 20, 2025</div>
-              <p>Absolutely fresh and sweet! These carrots were crisp and perfect for my salads and soups. Will definitely order again.</p>
-              <div class="actions">
-                <button>Helpful</button>
-                <button>Report</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-</div>
+            <div class="top-reviews">
+                <div class="top">
+                    <h2>Top Reviews</h2>
+                    <a href="#">See All</a>
+                </div>
 
-    <script src="../JS/product-card.js"></script>
-    <script src="../JS/global.js"></script>
+                <div class="review-card">
+                    <div class="user-info">
+                        <div class="avatar"></div>
+                        <div class="username">ChrisTheCarrotLover</div>
+                    </div>
+                    <div class="review-body">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <div class="product">Carrot 1kg</div>
+                        <div class="date">Reviewed in the United States on May 20, 2025</div>
+                        <p>Absolutely fresh and sweet! These carrots were crisp and perfect for my salads and soups.
+                            Will definitely order again.</p>
+                        <div class="feedback">
+                            <button class="helpful">Helpful</button>
+                            <div class="separator"></div>
+                            <button class="report-btn">Report</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="user-info">
+                        <div class="avatar"></div>
+                        <div class="username">ChrisTheCarrotLover</div>
+                    </div>
+                    <div class="review-body">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <div class="product">Carrot 1kg</div>
+                        <div class="date">Reviewed in the United States on May 20, 2025</div>
+                        <p>Absolutely fresh and sweet! These carrots were crisp and perfect for my salads and soups.
+                            Will definitely order again.</p>
+                        <div class="feedback">
+                            <button class="helpful">Helpful</button>
+                            <div class="separator"></div>
+                            <button class="report-btn">Report</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="../JS/product-card.js"></script>
+            <script src="../JS/global.js"></script>
 </body>
+
 </html>

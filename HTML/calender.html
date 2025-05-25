@@ -1,0 +1,87 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmCast</title>
+    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../CSS/calender.css">
+</head>
+
+<body>
+
+    <!-- Header dan Navbar -->
+    <div class="header">
+        <a href="/HTML/home.html" class="header-logo">
+            <img src="../Assets/main-logo.svg" alt="">
+            <h2>FarmCast</h2>
+        </a>
+        <div class="navbar">
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links">
+                <a href="/HTML/market.html">MARKET</a>
+                <a href="/HTML/services.html">SERVICES</a>
+                <a href="/HTML/register.html">REGISTER</a>
+            </div>
+        </div>
+    </div>
+<!-- isi -->
+    <section id="admin">
+        <div class="sidebar">
+            <div class="profile-img">
+                <div class="img-content-prf"></div>
+            </div>
+            <h4 class="text-name">Asep</h4>
+            <ul class="menu-list">
+                <li><a href="">Overview</a></li>
+                <li class="m-active"><a href="">Calendar</a></li>
+                <li><a href="/HTML/statistic.html">Statistics</a></li>
+                <li><a href="">Agricultural</a></li>
+                <li><a href="">Sales</a></li>
+            </ul>
+        </div>
+        <div class="content">
+          <div class="calendar-section">
+            <div class="calendar-header">
+              <h3>Calendar</h3>
+              <div class="calendar-tabs">
+                <button class="tab-btn active">Daily</button>
+                <button class="tab-btn">Weekly</button>
+                <button class="tab-btn">Monthly</button>
+              </div>
+            </div>
+        
+            <div class="calendar-grid" id="calendarGrid"></div>
+        
+            <div class="notes-section">
+              <div class="note-card">
+                <h4>🌾 Reminder: Watering</h4>
+                <p>Water the paddy field at 7 AM on Sunday.</p>
+              </div>
+              <div class="note-card">
+                <h4>🌱 Reminder: Soil Check</h4>
+                <p>Check soil moisture for corn at 10 AM on Wednesday.</p>
+              </div>
+              <div class="note-card">
+                <h4>🧺 Reminder: Harvest</h4>
+                <p>Prepare for tomato harvest on Friday at 11 AM.</p>
+              </div>
+            </div>
+          </div>
+        </div>  
+
+          <script src="../JS/statistic.js"></script>
+    </section>
+    
+
+<script src="../JS/calender.js"></script>
+</body>
+<script src="../JS/global.js"></script>
+
+
+
+</html>

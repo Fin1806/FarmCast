@@ -1,0 +1,158 @@
+#admin {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  margin-top: 18.4vh;
+}
+
+.sidebar {
+  width: 280px;
+  background-color: #FAFAFA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border: 15px solid green;
+  border-radius: 1000px;
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-content-prf {
+  width: 50px;
+  height: 50px;
+  box-shadow: 4px 4px 12px black;
+  border: 12px solid white;
+  border-radius: 1000px;
+  background: url(../Assets/hero-bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-name {
+  font-weight: 600;
+}
+
+.menu-list {
+  font-weight: 300;
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+  margin-top: 12px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #444;
+}
+
+.m-active {
+  list-style-type: disc;
+}
+.m-active a {
+  color: #000000;
+  font-weight: 700;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 24px;
+  box-sizing: border-box;
+}
+.calendar-section {
+  margin-top: 30px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendar-tabs .tab-btn {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background: #f4f4f4;
+  margin-left: 4px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.tab-btn.active {
+  background: #2e7d32;
+  color: white;
+  font-weight: bold;
+  border-color: #2e7d32;
+}
+
+.calendar-grid {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.calendar-row {
+  display: grid;
+  grid-template-columns: 60px repeat(7, 1fr);
+}
+.calendar-row > div:nth-child(2) {
+  background-color: #e6fce9; /* Light green background */
+  color: #2e7d32;            /* Green text */
+  font-weight: bold;
+}
+.calender-grid-header  {
+  background: #f4f4f4;
+  font-weight: bold;
+  text-align: center;
+}
+
+.time-label {
+  background: #f0f0f0;
+  font-size: 12px;
+  padding: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.cell {
+  height: 90px;
+  border: 1px solid #eee;
+  background: #fafafa;
+}
+
+.notes-section {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.note-card {
+  flex: 1;
+  min-width: 200px;
+  background: #eaffea;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.note-card h4 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 15px;
+}

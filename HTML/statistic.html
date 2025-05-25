@@ -1,0 +1,144 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmCast</title>
+    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../CSS/statistic.css">
+</head>
+
+<body>
+
+    <!-- Header dan Navbar -->
+    <div class="header">
+        <a href="/HTML/home.html" class="header-logo">
+            <img src="../Assets/main-logo.svg" alt="">
+            <h2>FarmCast</h2>
+        </a>
+        <div class="navbar">
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links">
+                <a href="/HTML/market.html">MARKET</a>
+                <a href="/HTML/services.html">SERVICES</a>
+                <a href="/HTML/register.html">REGISTER</a>
+            </div>
+        </div>
+    </div>
+<!-- isi -->
+    <section id="admin">
+        <div class="sidebar">
+            <div class="profile-img">
+                <div class="img-content-prf"></div>
+            </div>
+            <h4 class="text-name">Asep</h4>
+            <ul class="menu-list">
+                <li><a href="">Overview</a></li>
+                <li><a href="/HTML/calender.html">Calendar</a></li>
+                <li class="m-active"><a href="">Statistics</a></li>
+                <li><a href="">Agricultural</a></li>
+                <li><a href="">Sales</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <!-- Report card -->
+            <div class="report-card">
+              <div class="title">
+                <h3>Agricultural Report</h3>
+                <div class="tabs">
+                  <span class="tab active">Monthly</span>
+                  <span class="tab">Weekly</span>
+                  <span class="tab">Daily</span>
+                </div>
+              </div>
+        
+              <div class="yield-info">
+                <h1>2.450 kg</h1>
+                <span class="subtitle">Total Agricultural Yield</span>
+              </div>
+        
+              <canvas id="agriChart"></canvas>
+        
+              <div class="legend">
+                <div><span class="dot paddy"></span> Paddy</div>
+                <div><span class="dot corn"></span> Corn</div>
+              </div>
+            </div>
+        
+            <div class="sale-card">
+              <div class="sale-header">
+                <h3>Sale</h3>
+                <select id="monthSelect" class="dropdown">
+                    <option value="January" selected>January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                  </select>
+              </div>
+        
+              <canvas id="saleChart"></canvas>
+        
+              <div class="sale-legend">
+                <div><span class="dot current"></span> This Month</div>
+                <div><span class="dot last"></span> Last Month</div>
+              </div>
+            </div>
+
+            <div class="goal-overview">
+                <!-- Left: Daily Goal Bar -->
+                <div class="daily-goal-card">
+                  <div class="goal-header">
+                    <div>
+                      <p class="goal-title">Daily Goal (on kg)</p>
+                      <p class="goal-sub">All commodity</p>
+                    </div>
+                    <input class="goal-input" type="text" value="20" readonly />
+                  </div>
+                  <div class="goal-bars">
+                    <div class="bar"><div class="fill" style="height: 60%;"></div><span>M</span></div>
+                    <div class="bar"><div class="fill" style="height: 30%;"></div><span>T</span></div>
+                    <div class="bar"><div class="fill" style="height: 40%;"></div><span>W</span></div>
+                    <div class="bar"><div class="fill" style="height: 90%;"></div><span>T</span></div>
+                    <div class="bar"><div class="fill" style="height: 50%;"></div><span>F</span></div>
+                  </div>
+                </div>
+              
+                <!-- Middle: Donut Chart -->
+                <div class="donut-chart">
+                  <canvas id="donutChart"></canvas>
+                </div>
+              
+                <!-- Right: Price Cards -->
+                <div class="commodity-prices">
+                  <h4>Commodity</h4>
+                  <div class="price-box dark">Paddy <span>Rp8.800.000</span></div>
+                  <div class="price-box medium">Corn <span>Rp2.800.000</span></div>
+                  <div class="price-box light">Tomato <span>Rp1.500.000</span></div>
+                </div>
+              </div>
+          </div>
+
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <script src="../JS/statistic.js"></script>
+    </section>
+    
+
+<script src="../JS/statistic.js"></script>
+</body>
+<script src="../JS/global.js"></script>
+
+
+
+</html>

@@ -1,311 +1,311 @@
 .content {
-    width: 100%;
+  width: 100%;
 
-    display: flex;
-    flex-direction: column;
-    padding: 32px;
-    overscroll-behavior-y: scroll;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  overscroll-behavior-y: scroll;
 }
 
 .card-weather {
-    display: flex;
-    flex-direction: row;
-    border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 12px;
 
-    background-color: white;
-    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.397);
-    overflow: hidden;
-    flex-wrap: wrap;
+  background-color: white;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.397);
+  overflow: hidden;
+  flex-wrap: wrap;
 }
 
 .cw-left {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: end;
-    padding: 12px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  padding: 12px;
 }
 
 .wrapper-clwi {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
 .list-indicators {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    gap: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 50px;
 }
 
 .item-indicator {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .item-indicator img {
-    width: 32px;
-    height: 32px;
+  width: 32px;
+  height: 32px;
 }
 
 .item-indicator h5 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 14px;
-    font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .item-indicator h2 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 10px;
 }
 
 .expectations-card {
-    background: #0E4028;
-    background: linear-gradient(329deg, rgba(14, 64, 40, 1) 16%, rgba(25, 151, 92, 1) 82%);
-    padding: 22px;
-    border-radius: 12px;
-    color: white;
-    margin-top: 12px;
+  background: #0E4028;
+  background: linear-gradient(329deg, rgba(14, 64, 40, 1) 16%, rgba(25, 151, 92, 1) 82%);
+  padding: 22px;
+  border-radius: 12px;
+  color: white;
+  margin-top: 12px;
 }
 
 .sunser {
-    margin-top: 22px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 50px;
+  margin-top: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
 
 }
 
 .item-indicator-ss {
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 
 .item-indicator-ss h5 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 10px;
-    font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 10px;
+  font-weight: 400;
 }
 
 .item-indicator-ss h2 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 20px;
 }
 
 .time-brakatak {
-    height: 50px;
-    width: 90px;
-    border: 2px white;
-    border-style: dashed;
-    border-top-left-radius: 10000px;
-    border-top-right-radius: 10000px;
+  height: 50px;
+  width: 90px;
+  border: 2px white;
+  border-style: dashed;
+  border-top-left-radius: 10000px;
+  border-top-right-radius: 10000px;
 }
 
 .cw-right {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: start;
-    padding: 0px 18px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: start;
+  padding: 0px 18px;
 
 }
 
 .current-weahter-card {
-    position: relative;
-    background: #0E4028;
-    background: linear-gradient(329deg, rgba(14, 64, 40, 1) 16%, rgba(25, 151, 92, 1) 82%);
-    padding: 12px;
-    border-end-end-radius: 12px;
-    border-end-start-radius: 12px;
-    color: white;
+  position: relative;
+  background: #0E4028;
+  background: linear-gradient(329deg, rgba(14, 64, 40, 1) 16%, rgba(25, 151, 92, 1) 82%);
+  padding: 12px;
+  border-end-end-radius: 12px;
+  border-end-start-radius: 12px;
+  color: white;
 
 }
 
 .city-name {
-    font-weight: 700;
-    font-size: 22px;
-    margin-top: 0;
+  font-weight: 700;
+  font-size: 22px;
+  margin-top: 0;
 }
 
 .temp-details {
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    justify-content: end;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: end;
 }
 
 .temp-texts h1 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 92px;
-    line-height: 0.9;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 92px;
+  line-height: 0.9;
 }
 
 .temp-texts p {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 24px;
 }
 
 .temp-texts {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    margin-left: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 200px;
 }
 
 .other-temp {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: start;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: start;
 }
 
 .other-temp p {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 12px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 12px;
 }
 
 .temp-details img {
-    position: absolute;
-    left: -200px;
-    top: -40px;
-    width: 380px;
-    height: 380px;
+  position: absolute;
+  left: -200px;
+  top: -40px;
+  width: 380px;
+  height: 380px;
 }
 
 .sevendays-forecast {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
 }
 
 .item-sdays-forecast {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .item-sdays-forecast p {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 12px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 12px;
 }
 
 .item-sdays-forecast img {
-    width: 32px;
-    height: 32px;
+  width: 32px;
+  height: 32px;
 }
 
 .overview-details {
-    display: flex;
+  display: flex;
 
-    flex-direction: row;
-    gap: 12px;
+  flex-direction: row;
+  gap: 12px;
 }
 
 .map-card {
-    flex: 2;
+  flex: 2;
 
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 4px 4px 12px rgb(134, 134, 134);
-    display: flex;
-    flex-direction: column;
-    padding: 12px;
-    background: url(../Assets/map.svg);
-    background-size: 120%;
-    background-repeat: no-repeat;
-    background-position: center;
-    object-fit: cover;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 4px 4px 12px rgb(134, 134, 134);
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  background: url(../Assets/map.svg);
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
 }
 
 .col-others {
-    flex: 1;
+  flex: 1;
 
 
-    border-radius: 8px;
-    box-shadow: 4px 4px 12px rgb(134, 134, 134);
+  border-radius: 8px;
+  box-shadow: 4px 4px 12px rgb(134, 134, 134);
 }
 
 .col-others {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .due-jobs-card,
 .temperature-card {
-    background: white;
-    border-radius: 12px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 .due-jobs-card h4 {
-    font-size: 1rem;
-    margin-bottom: 12px;
+  font-size: 1rem;
+  margin-bottom: 12px;
 }
 
 .job-item {
-    display: flex;
-    gap: 12px;
-    border-bottom: 1px solid #eee;
-    padding: 8px 0;
+  display: flex;
+  gap: 12px;
+  border-bottom: 1px solid #eee;
+  padding: 8px 0;
 }
 
 .job-item:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .job-icon img {
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
 }
 
 
 .searchbar-newjob {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .searchbar-newjob input {
-    height: 30px;
-    width: 320px;
-    border-radius: 4px;
+  height: 30px;
+  width: 320px;
+  border-radius: 4px;
 }
 
 .searchbar-newjob button {
-    background-color: #20995f;
-    color: white;
-    height: 30px;
-    width: 120px;
-    border-radius: 8px;
-    border: 0px;
-    cursor: pointer;
+  background-color: #20995f;
+  color: white;
+  height: 30px;
+  width: 120px;
+  border-radius: 8px;
+  border: 0px;
+  cursor: pointer;
 }
 
 
@@ -313,154 +313,154 @@
 
 
 .summary-container {
-    width: 100%;
-    padding-left: 0;
+  width: 100%;
+  padding-left: 0;
 }
 
 .summary-container h2 {
-    margin-bottom: 20px;
-    font-size: 1.4rem;
-    color: #333;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  color: #333;
 }
 
 .summary-cards {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    /* Align to start */
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  /* Align to start */
 }
 
 .card {
-    flex: 1 1 300px;
-    max-width: 280px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  flex: 1 1 300px;
+  max-width: 280px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .icon img {
-    width: 32px;
-    height: 32px;
+  width: 32px;
+  height: 32px;
 }
 
 .icon.green {
-    color: green;
+  color: green;
 }
 
 .icon.orange {
-    color: orange;
+  color: orange;
 }
 
 .icon.red {
-    color: red;
+  color: red;
 }
 
 .title {
-    font-size: 1rem;
-    color: #555;
+  font-size: 1rem;
+  color: #555;
 }
 
 .value {
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: #222;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #222;
 }
 
 /* Soil Conditions */
 
 .soil-condition {
 
-    width: 100%;
+  width: 100%;
 
 }
 
 .soil-condition h2 {
-    font-size: 1.4rem;
-    margin-bottom: 16px;
+  font-size: 1.4rem;
+  margin-bottom: 16px;
 }
 
 .soil-table {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    overflow: hidden;
-    padding: 22px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 22px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .soil-row {
-    display: flex;
-    flex-direction: row;
-    padding: 16px;
-    border-bottom: 1px solid #eee;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+  align-items: center;
 }
 
 .soil-row:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .soil-row.header {
-    background-color: #f9f9f9;
-    font-weight: 700;
+  background-color: #f9f9f9;
+  font-weight: 700;
 }
 
 .soil-row.header div {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .soil-row>div {
-    flex: 1;
-    padding: 0 10px;
+  flex: 1;
+  padding: 0 10px;
 }
 
 .parameter {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #888;
-    font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #888;
+  font-weight: 600;
 }
 
 .parameter img {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 .value {
-    font-weight: 600;
-    font-size: 1.1rem;
+  font-weight: 600;
+  font-size: 1.1rem;
 }
 
 .recommendation {
-    font-size: 0.95rem;
+  font-size: 0.95rem;
 }
 
 .recommendation.green {
-    color: #0b6d42;
+  color: #0b6d42;
 }
 
 .recommendation.orange {
-    color: #e87c00;
+  color: #e87c00;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-    .soil-row {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-    }
+  .soil-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
 
-    .soil-row.header {
-        display: none;
-    }
+  .soil-row.header {
+    display: none;
+  }
 
-    .soil-row>div {
-        padding: 4px 0;
-    }
+  .soil-row>div {
+    padding: 4px 0;
+  }
 }
