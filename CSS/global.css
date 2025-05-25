@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0;
+}
+
+.button-primary {
+    background-color: #159458;
+    padding: 12px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    transition: .6s;
+}
+
+.button-primary:hover {
+    background-color: #1ab46c;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 82px;
+    align-items: center;
+}
+
+.header-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    font-weight: 800;
+}
+
+.header-logo h2 {
+    font-weight: 800;
+}
+
+.header-logo img {
+    width: auto;
+    height: 32px;
+}
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 10vh;
+    align-items: center;
+    justify-content: end;
+}
+
+.nb-active {
+    font-weight: 700;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: gray;
+}
