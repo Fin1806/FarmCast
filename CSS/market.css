@@ -72,6 +72,7 @@
     height: 400px;
     position: relative;
     overflow: hidden;
+    border-radius: 0px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
@@ -82,6 +83,7 @@
     /* Must match number of slides (2 slides = 200%) */
     height: 100%;
     transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 /* Individual slides */
@@ -95,10 +97,11 @@
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
+    border-radius: 0;
 }
 
 .slide-1 {
-    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    background: white;
 }
 
 .slide-2 {
@@ -110,6 +113,7 @@
     flex: 1;
     z-index: 2;
     padding-right: 30px;
+
 }
 
 .slide h2 {
