@@ -24,7 +24,7 @@
              <div class="nav-links">
                  <a class="nb-active" href="/HTML/market.html">MARKET</a>
                  <a href="/HTML/services.html">SERVICES</a>
-                 <a href="">REGISTER</a>
+                 <a href="/HTML/register.html">REGISTER</a>
              </div>
          </div>
         </div>
@@ -36,29 +36,56 @@
                  <img src="../Assets/Basket.png" alt="Basket" class="basket-icon">
              </div>
       </div>
-    <div class="product-card">
-        <div class="product-image">
-            <img src="../Assets/Carrot-Product.png" alt="Organic Carrots">
-        </div>
-        <div class="product-details">
-            <h2 class="product-title">Organic Carrots – 1kg Pack – Farm Fresh Vegetables</h2>
-            <div class="product-rating">
-                <span class="rating">4.9</span>
-                <div class="stars">⭐⭐⭐⭐⭐</div>
-                <span class="reviews">23.4 Reviews</span>
-                <span class="sold">10K+ Sold</span>
+
+    <div class="main-container">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="../Assets/Carrot-Product.png" alt="Organic Carrots">
             </div>
-            <div class="product-price">Rp. 20.000</div>
-            <div class="shop-vouchers">
-                <span class="label">Shop Vouchers</span>
-                <button class="voucher">Rp. 10.000 OFF</button>
-                <button class="voucher">Rp. 20.000 OFF</button>
-            </div>
-            <div class="shipping">
-                <span class="label">Shipping</span>
-                <div class="delivery-info">
-                    <img src="../Assets/Truck.png" alt="Delivery" class="delivery-icon">
-                    <span>Guaranteed arrival by 26 May</span>
+            
+            <div class="product-details">
+                <div class="detail-row full-width">
+                    <h2 class="product-title">Organic Carrots – 1kg Pack – Farm Fresh Vegetables</h2>
+                </div>
+
+                <div class="detail-row">
+                    <span class="row-label">Rating</span>
+                    <div class="row-content">
+                        <div class="rating-content">
+                            <span class="rating-stars">⭐⭐⭐⭐⭐</span>
+                            <span>4.9</span>
+                            <span>(23.4K Reviews)</span>
+                            <span>•</span>
+                            <span>10K+ Sold</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-row">
+                    <span class="row-label">Price</span>
+                    <div class="row-content">
+                        <span class="product-price">Rp. 20.000</span>
+                    </div>
+                </div>
+
+                <div class="detail-row">
+                    <span class="row-label">Shop Vouchers</span>
+                    <div class="row-content">
+                        <div class="voucher-buttons">
+                            <button class="voucher">Rp. 10.000 OFF</button>
+                            <button class="voucher">Rp. 20.000 OFF</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-row">
+                    <span class="row-label">Shipping</span>
+                    <div class="row-content">
+                        <div class="delivery-info">
+                            <img src="../Assets/Truck.png" alt="Delivery" class="delivery-icon">
+                            <span>Guaranteed arrival by 26 May</span>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="detail-row">
@@ -77,7 +104,7 @@
 
                 <div class="action-buttons">
                     <button class="btn add-to-cart">
-                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTUgNUgxNUwxMyAxM0g3TDUgNVoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=" alt="Cart" class="cart-icon">
+                        <img src="../Assets/Add-Basket.png" alt="Cart" class="cart-icon">
                         Add to Cart
                     </button>
                     <button class="btn buy-now">Buy Now</button>
@@ -88,7 +115,7 @@
         <div class="farmer-profile">
             <div class="profile-container">
                 <div class="farmer-info">
-                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMzIiIGZpbGw9IiNEOUQ5RDkiLz4KPHRleHQgeD0iMzIiIHk9IjM4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiM2NjYiPvCfkqg8L3RleHQ+Cjwvc3ZnPgo=" alt="Farmer Profile" class="farmer-avatar">
+                    <img src="../Assets/cowboy.png" alt="Farmer Profile" class="farmer-avatar">
                     <div class="farmer-details">
                         <h3>Kudus Number 1 Farmer</h3>
                         <div class="online-status">Online 2 hours ago</div>
@@ -224,29 +251,48 @@
         </div>
     </div>
 
-    <script>
-        // Quantity control functionality
-        document.querySelector('.quantity-btn.plus').addEventListener('click', function() {
-            const input = document.querySelector('.quantity-input');
-            input.value = parseInt(input.value) + 1;
-        });
+    <footer class="footer">
 
-        document.querySelector('.quantity-btn.minus').addEventListener('click', function() {
-            const input = document.querySelector('.quantity-input');
-            if (parseInt(input.value) > 1) {
-                input.value = parseInt(input.value) - 1;
-            }
-        });
+        <div class="content-fr-1">
 
-        // Add to cart functionality
-        document.querySelector('.add-to-cart').addEventListener('click', function() {
-            alert('Added to cart!');
-        });
+            <div class="cfr1-item">
+                <h1>Services</h1>
+                <p>Lite</p>
+                <p>Pro</p>
+                <p>Enterprise</p>
+            </div>
 
-        // Buy now functionality
-        document.querySelector('.buy-now').addEventListener('click', function() {
-            alert('Proceeding to checkout!');
-        });
-    </script>
+            <div class="cfr1-item">
+                <h1>Solutions</h1>
+                <p>Crop Monitoring</p>
+                <p>Soil Health Reports</p>
+                <p>Irrigation Guidance</p>
+            </div>
+
+            <div class="cfr1-item">
+                <h1>About Us</h1>
+                <p>Privacy</p>
+                <p>Terms of Use</p>
+                <p>Contact Us</p>
+            </div>
+
+            <div class="cfr1-item">
+                <h1>Address</h1>
+                <p>FarmCast Headquarters</p>
+                <p>Jalan Sutera Boulevard No. 88</p>
+                <p>Alam Sutera, Tangerang 15143</p>
+                <p>Indonesia</p>
+                <p>Phone: +62 21 5555 8888</p>
+                <p>Email: support@farmcast.com</p>
+            </div>
+
+        </div>
+
+        <p id="text-copyright">
+            © 2025 FarmCast. All rights reserved.
+        </p>
+    </footer>
+
+    <script src="../JS/product-card.js"> </script>
 </body>
 </html>
