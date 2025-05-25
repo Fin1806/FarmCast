@@ -288,3 +288,8 @@ ul li a {
 .m-active {
     list-style-type: disc;
 }
+
+.m-active a {
+    color: #000000;
+    font-weight: 700;
+}

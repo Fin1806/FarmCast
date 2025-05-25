@@ -1,8 +1,5 @@
-
-
-
 .container {
-    padding-top: 32vh;
+  padding-top: 32vh;
   display: flex;
   background: url(../Assets/bg-reg.svg);
   background-repeat: no-repeat;
@@ -21,7 +18,7 @@
 
 
 
-.card-form{
+.card-form {
   margin: 40px 30px;
   width: 100%;
   flex: 1;
@@ -33,6 +30,7 @@
   justify-content: center;
   height: auto;
 }
+
 .form-container {
   max-width: 100%;
   max-height: 90%;
@@ -94,7 +92,7 @@ input[type="password"] {
 button {
   margin-top: 20px;
   width: 100%;
-  background-color: #000;
+  background-color: #19975C;
   color: #fff;
   padding: 12px;
   border: none;
@@ -102,12 +100,13 @@ button {
   cursor: pointer;
   font-weight: bold;
   border: 1px solid transparent;
+  transition: .3s;
 }
 
 button:hover {
-border: 1px solid #000000;
+  border: 1px solid #19975C;
   background-color: #ffffff;
-  color: #000000;
+  color: #19975C;
 }
 
 .hidden {

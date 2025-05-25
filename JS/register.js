@@ -175,7 +175,9 @@ Email   : ${data.email}
 Password: ${data.password}
 `;
 
-  alert(msg);
+
+
   form2.reset();
   validateSignIn();
+  window.location.replace('/HTML/dashboard.html');
 });
