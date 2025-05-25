@@ -67,6 +67,7 @@
 
 
 .product-card {
+    margin-top: 40vh;
     display: flex;
     background: white;
     width: 100%;
@@ -75,6 +76,10 @@
     padding: 20px;
     gap: 40px;
     align-items: flex-start;
+}
+
+.jarak {
+    height: 40vh;
 }
 
 .product-image {

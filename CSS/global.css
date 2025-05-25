@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
     display: flex;
     flex-direction: column;
-    font-family: "Inter", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     margin: 0;
-   
+
 }
 
 .button-primary {
@@ -30,7 +30,7 @@ body {
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
-    padding: 42px;
+    padding: 22px;
     align-items: center;
     position: fixed;
     z-index: 10;
@@ -59,6 +59,7 @@ body {
     height: 32px;
 }
 
+
 /* NAVBAR */
 
 .navbar {
@@ -77,6 +78,10 @@ body {
 .navbar a {
     text-decoration: none;
     color: gray;
+}
+
+.nav-links a {
+    margin-left: 10vh;
 }
 
 /* Footer Styles */
@@ -137,7 +142,7 @@ body {
     flex-direction: column;
     width: 100%;
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
     z-index: 10;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -147,8 +152,8 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
-   justify-content: space-between; 
-   
+    justify-content: space-between;
+
 }
 
 .search-bar {
@@ -172,6 +177,7 @@ body {
     height: 30px;
     cursor: pointer;
 }
+
 .hamburger-menu span {
     display: block;
     width: 100%;
@@ -185,17 +191,100 @@ body {
     .hamburger-menu {
         display: flex;
     }
+
     .nav-links {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 100%;
         left: 0;
         width: 100%;
         background-color: white;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px 0;
+        z-index: 1000;
     }
+
+    .nav-links a {
+        padding: 15px 20px;
+        border-bottom: 1px solid #eee;
+        text-decoration: none;
+        color: black;
+    }
+
+    .nav-links a:hover {
+        background-color: #f5f5f5;
+    }
+
     .navbar.active .nav-links {
         display: flex;
     }
+
+    .header {
+        position: relative;
+    }
+}
+
+#admin {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    margin-top: 14.4vh;
+}
+
+.sidebar {
+    width: 350px;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border: 15px solid green;
+    border-radius: 1000px;
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-content-prf {
+    width: 50px;
+    height: 50px;
+    box-shadow: 4px 4px 12px black;
+    border: 12px solid white;
+    border-radius: 1000px;
+    background: url(../Assets/hero-bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-name {
+    font-weight: 600;
+}
+
+.menu-list {
+    font-weight: 300;
+    text-decoration: none;
+}
+
+ul li {
+    list-style-type: none;
+    margin-top: 12px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #444;
+}
+
+
+.m-active {
+    list-style-type: disc;
 }
