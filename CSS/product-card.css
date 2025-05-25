@@ -9,6 +9,7 @@
 }
 
 .product-card {
+    margin-top: 40vh;
     display: flex;
     background: white;
     width: 100%;
@@ -59,6 +60,7 @@ body {
 }
 
 .product-card {
+    margin-top: 40vh;
     display: flex;
     background: white;
     width: 100%;
@@ -67,6 +69,10 @@ body {
     padding: 20px;
     gap: 40px;
     align-items: flex-start;
+}
+
+.jarak {
+    height: 40vh;
 }
 
 .product-image {
