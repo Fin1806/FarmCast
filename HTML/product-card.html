@@ -7,22 +7,31 @@
     <link rel="stylesheet" href="../CSS/product-card.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="hamburger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="nav-links">
-            <div class="search-container">
-                <img src="../Assets/Search.png" alt="Search" class="search-icon">
-                <input type="text" placeholder="Find in FarmCast" class="search-input">
+    <div class="header">
+        <a href="/HTML/home.html" class="header-logo">
+            <img src="../Assets/main-logo.svg" alt="">
+            <h2>FarmCast</h2>
+        </a>
+        <div class="navbar">
+            <div class="nav-links">
+                <a href="/HTML/market.html">MARKET</a>
+                <a href="/HTML/services.html">SERVICES</a>
+                <a href="/HTML/register.html">REGISTER</a>
             </div>
-            <div class="cart-container">
-                <img src="../Assets/Basket.png" alt="Cart" class="cart-icon">
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-    </nav>
+        <div class="search-container">
+            <img src="../Assets/Search.png" alt="Search" class="search-icon">
+            <input type="text" placeholder="Find in FarmCast" class="search-input">
+        </div>
+        <div class="cart-container">
+            <img src="../Assets/Basket.png" alt="Cart" class="cart-icon">
+        </div>
+    </div>
     <div class="product-card">
         <div class="product-image">
             <img src="../Assets/Carrot-Product.png" alt="Organic Carrots">
@@ -183,5 +192,6 @@
 </div>
 
     <script src="../JS/product-card.js"></script>
+    <script src="../JS/global.js"></script>
 </body>
 </html>

@@ -59,6 +59,7 @@ body {
     height: 32px;
 }
 
+
 /* NAVBAR */
 
 .navbar {
@@ -77,6 +78,10 @@ body {
 .navbar a {
     text-decoration: none;
     color: gray;
+}
+
+.nav-links a {
+    margin-left: 10vh;
 }
 
 /* Footer Styles */
@@ -137,7 +142,7 @@ body {
     flex-direction: column;
     width: 100%;
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
     z-index: 10;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -189,13 +194,27 @@ body {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 100%;
         left: 0;
         width: 100%;
         background-color: white;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px 0;
+        z-index: 1000;
+    }
+    .nav-links a {
+        padding: 15px 20px;
+        border-bottom: 1px solid #eee;
+        text-decoration: none;
+        color: black;
+    }
+    .nav-links a:hover {
+        background-color: #f5f5f5;
     }
     .navbar.active .nav-links {
         display: flex;
+    }
+    .header {
+        position: relative;
     }
 }
