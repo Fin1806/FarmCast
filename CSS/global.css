@@ -293,3 +293,46 @@ ul li a {
     color: #000000;
     font-weight: 700;
 }
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    width: 1000px;
+    flex-direction: row;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    max-width: 800px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 14px 16px 14px 44px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    font-size: 1rem;
+    background-color: #f8f8f8;
+}
+
+.search-icon-inside {
+    width: 32px;
+    height: 24px;
+    cursor: pointer;
+    opacity: 0.8;   
+    padding-top: 42px;
+}
+
+.basket-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    opacity: 0.8;
+}
