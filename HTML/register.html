@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../CSS/register.css">
+    <title>V-Phone</title>
+</head>
+
+<body>
+   <!-- Header dan Navbar -->
+   <div class="header">
+    <a href="/HTML/home.html" class="header-logo">
+        <img src="../Assets/main-logo.svg" alt="">
+        <h2>FarmCast</h2>
+    </a>
+        <div class="navbar">
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links">
+                <a href="/HTML/market.html">MARKET</a>
+                <a href="/HTML/services.html">SERVICES</a>
+                <a href="" class="nb-active">REGISTER</a>
+            </div>
+        </div>
+</div>
+
+    <!-- REGISTER  -->
+    <div class="container">
+      
+        <div class="right-panel">
+            <div class="card-form">
+                <div class="form-container">
+                    <div class="tabs">
+                        <span id="signUpTab" class="active">Sign Up</span>
+                        <span id="signInTab">Sign In</span>
+                    </div>
+
+                    <!-- SIGN UP -->
+                    <form id="signUpForm" class="form">
+                        <label>Name</label>
+                        <input type="text" name="username" placeholder="Enter Your Full Name">
+                        <span id="errorUsername" class="error"></span>
+
+                        <label>Email</label>
+                        <input type="email" name="email" placeholder="Enter Your Email">
+                        <span id="errorEmail" class="error"></span>
+
+                        <label>Gender</label>
+                        <div class="gender">
+                            <label><input type="radio" name="gender" value="Male"> Male</label>
+                            <label><input type="radio" name="gender" value="Female"> Female</label>
+                            <label><input type="radio" name="gender" value="Other"> Other</label>
+                        </div>
+                        <span id="errorGender" class="error"></span>
+
+                        <label>Password</label>
+                        <input type="password" name="password" placeholder="Enter Your Password">
+                        <span id="errorPassword" class="error"></span>
+
+                        <div class="checkbox">
+                            <input type="checkbox" name="agree" id="agree">
+                            <label>Agree to our terms of service</label>
+                        </div>
+                        <span id="errorAgree" class="error"></span>
+
+                        <button type="submit" id="btn-submit">Sign Up</button>
+                    </form>
+
+                    <!-- SIGN IN -->
+                    <form id="signInForm" class="form hidden">
+                        <label for="signInEmail">Email</label>
+                        <input type="email" id="signInEmail" name="signInEmail" placeholder="Enter Your Email">
+                        <span id="errorSignInEmail" class="error"></span>
+
+                        <label for="signInPassword">Password</label>
+                        <input type="password" id="signInPassword" name="signInPassword"
+                            placeholder="Enter Your Password">
+                        <span id="errorSignInPassword" class="error"></span>
+
+                        <button type="submit">Sign In</button>
+                        <p class="forgot">Forget Password?</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            
+            <div class="content-fr-1">
+    
+                <div class="cfr1-item">
+                    <h1>Services</h1>
+                    <p>Lite</p>
+                    <p>Pro</p>
+                    <p>Enterprise</p>
+                </div>
+    
+                <div class="cfr1-item">
+                    <h1>Solutions</h1>
+                    <p>Crop Monitoring</p>
+                    <p>Soil Health Reports</p>
+                    <p>Irrigation Guidance</p>
+                </div>
+    
+                <div class="cfr1-item">
+                    <h1>About Us</h1>
+                    <p>Privacy</p>
+                    <p>Terms of Use</p>
+                    <p>Contact Us</p>
+                </div>
+    
+                <div class="cfr1-item">
+                    <h1>Address</h1>
+                    <p>FarmCast Headquarters</p>
+                    <p>Jalan Sutera Boulevard No. 88</p>
+                    <p>Alam Sutera, Tangerang 15143</p>
+                    <p>Indonesia</p>
+                    <p>Phone: +62 21 5555 8888</p>
+                    <p>Email: support@farmcast.com</p>
+                </div>
+    
+            </div>
+    
+            <p id="text-copyright">
+                © 2025 FarmCast. All rights reserved.
+            </p>
+        </footer>
+        <script src="../JS/register.js"></script>
+</body>
+
+</html>

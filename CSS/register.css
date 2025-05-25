@@ -1,0 +1,238 @@
+
+
+
+.container {
+    padding-top: 32vh;
+  display: flex;
+  background: url(../Assets/bg-reg.svg);
+  background-repeat: no-repeat;
+  object-fit: fill;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+.card-form{
+  margin: 40px 30px;
+  width: 100%;
+  flex: 1;
+  padding: 30px 40px;
+  background-color: #fff;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+}
+.form-container {
+  max-width: 100%;
+  max-height: 90%;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tabs span {
+  margin-right: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+
+.tabs .active {
+  border-bottom: 3px solid #000;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.gender {
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.gender label {
+  font-size: 14px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.checkbox input {
+  margin-right: 8px;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid transparent;
+}
+
+button:hover {
+border: 1px solid #000000;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.hidden {
+  display: none;
+}
+
+.forgot {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #000;
+  text-align: left;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 0;
+  background-color: #ffffff;
+  border-top: 1px solid #ccc;
+  padding: 50px 0;
+}
+
+.footer-container {
+  max-width: 1000000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 20px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: left;
+  margin-bottom: 30px;
+  flex-basis: 100%;
+  order: -1;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+}
+
+.footer-section h4 {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 6px;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 13px;
+}
+
+.footer-social {
+  margin-bottom: 20px;
+}
+
+.footer-social p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 25px;
+  height: 25px;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 12px;
+  color: #555;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 0px 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-logo {
+    margin-bottom: 30px;
+    flex-basis: auto;
+    order: 0;
+  }
+
+  .footer-section {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+
+  .footer-social {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+}
