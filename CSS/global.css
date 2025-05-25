@@ -24,18 +24,25 @@ body {
 /* Header */
 
 .header {
+    align-self: center;
     display: flex;
     flex-direction: row;
+    width: 100%;
     justify-content: space-between;
-    padding: 82px;
+    padding: 52px;
     align-items: center;
+    position: fixed;
+    z-index: 10;
+    background-color: white;
 }
 
 .header-logo {
     display: flex;
     flex-direction: row;
+    justify-content: left;
     align-items: center;
     gap: 12px;
+    margin-left: 32px;
     font-weight: 800;
     text-decoration: none;
     color: black;
@@ -55,7 +62,8 @@ body {
 .navbar {
     display: flex;
     flex-direction: row;
-    gap: 10vh;
+    gap: 60px;
+    margin-right: 32px;
     align-items: center;
     justify-content: end;
 }
